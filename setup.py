@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: BSD-3-Clause
 from setuptools import find_packages
 from setuptools import setup
 
