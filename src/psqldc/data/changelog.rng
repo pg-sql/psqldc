@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rng:grammar xmlns:rng="http://relaxng.org/ns/structure/1.0"
+             xmlns:a="http://relaxng.org/ns/annotation/1.0"
+             xmlns:dc="http://www.postgresql.org/xml/ns/dbchangelog"
+             datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+
+    <rng:define name="dbChangelog">
+        <rng:element name="dc:databaseChangeLog">
+            <rng:zeroOrMore>
+                <rng:ref name="property"/>
+            </rng:zeroOrMore>
+        </rng:element>
+    </rng:define>
+
+    <rng:define name="property">
+        <rng:element name="dc:property">
+            <rng:attribute name="name"/>
+            <rng:attribute name="value"/>
+        </rng:element>
+    </rng:define>
+
+    <rng:start>
+        <rng:ref name="dbChangelog"/>
+    </rng:start>
+
+</rng:grammar>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog xmlns="http://www.postgresql.org/xml/ns/dbchangelog">
+
+    <property name="test" value="OK"/>
+
+
+
+</databaseChangeLog>
