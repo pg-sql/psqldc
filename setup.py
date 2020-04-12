@@ -1,4 +1,5 @@
 # SPDX-License-Identifier: BSD-3-Clause
+# flake8: noqa
 from setuptools import find_packages
 from setuptools import setup
 
