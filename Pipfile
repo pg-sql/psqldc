@@ -6,6 +6,7 @@ verify_ssl = true
 [dev-packages]
 pytest = "*"
 pytest-runner = "*"
+flake8 = "*"
 
 [packages]
 psycopg2-binary = "*"
