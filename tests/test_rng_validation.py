@@ -2,8 +2,9 @@ import pytest
 import os
 from lxml import etree
 
-DC_FOLDER = os.path.join('.', 'tests', 'dcfiles')
-RNG_FILE = os.path.join('.', 'src', 'psqldc', 'data', 'changelog.rng')
+ROOT_FOLDER = os.path.join(os.path.dirname(__file__), '..')
+DC_FOLDER = os.path.join(ROOT_FOLDER, 'tests', 'dcfiles')
+RNG_FILE = os.path.join(ROOT_FOLDER, 'src', 'psqldc', 'data', 'changelog.rng')
 
 
 def validate_file(dc_file=None):
