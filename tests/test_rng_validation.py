@@ -41,3 +41,7 @@ class TestRngValidation:
             validate_file('0002-bad-camel-case.xml')
 
         assert 'Expecting element databaseChangeLog, got DatabaseChangeLog, line 3' in str(e.value)  # noqa
+
+    def test_good_dc_file(self):
+        """Good empty file"""
+        validate_file('0003-good-dc-file.xml')
