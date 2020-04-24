@@ -19,6 +19,9 @@
         <rng:element name="dc:property">
             <rng:attribute name="name"/>
             <rng:attribute name="value"/>
+            <rng:optional><rng:attribute name="context"/></rng:optional>
+            <rng:optional><rng:attribute name="label"/></rng:optional>
+            <rng:optional><rng:attribute name="module"/></rng:optional>
         </rng:element>
     </rng:define>
 

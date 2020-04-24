@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog xmlns="http://www.postgresql.org/xml/ns/dbchangelog">
+    <property name="test" value="OK"/>
+    <property name="testContext" value="OK" context="demo"/>
+    <property name="testLabel" value="OK" label="community"/>
+    <property name="testModule" value="OK" module="pluginOne"/>
+    <property name="testContextLabel" value="OK" context="demo" label="community"/>
+    <property name="testContextLabelModule" value="OK" context="demo" label="community" module="pluginOne"/>
+    <property name="testContextModule" value="OK" context="demo" module="pluginOne"/>
+</databaseChangeLog>
