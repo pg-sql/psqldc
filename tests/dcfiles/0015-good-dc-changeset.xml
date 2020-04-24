@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog xmlns="http://www.postgresql.org/xml/ns/dbchangelog">
+    <changeSet id="1" author="John Doe">
+    </changeSet>
+    <changeSet id="2" author="John Doe" context="demo">
+    </changeSet>
+    <changeSet id="3" author="John Doe" label="pro">
+    </changeSet>
+    <changeSet id="3" author="John Doe" context="demo" label="pro">
+    </changeSet>
+    <changeSet id="3" author="John Doe" module="plugin1">
+    </changeSet>
+    <changeSet id="3" author="John Doe" context="demo" label="pro" module="plugin1">
+    </changeSet>
+</databaseChangeLog>

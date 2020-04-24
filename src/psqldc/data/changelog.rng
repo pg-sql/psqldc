@@ -12,6 +12,9 @@
             <rng:zeroOrMore>
                 <rng:ref name="property"/>
             </rng:zeroOrMore>
+            <rng:zeroOrMore>
+                <rng:ref name="changeset"/>
+            </rng:zeroOrMore>
         </rng:element>
     </rng:define>
 
@@ -19,6 +22,16 @@
         <rng:element name="dc:property">
             <rng:attribute name="name"/>
             <rng:attribute name="value"/>
+            <rng:optional><rng:attribute name="context"/></rng:optional>
+            <rng:optional><rng:attribute name="label"/></rng:optional>
+            <rng:optional><rng:attribute name="module"/></rng:optional>
+        </rng:element>
+    </rng:define>
+
+    <rng:define name="changeset">
+        <rng:element name="dc:changeSet">
+            <rng:attribute name="id"/>
+            <rng:attribute name="author"/>
             <rng:optional><rng:attribute name="context"/></rng:optional>
             <rng:optional><rng:attribute name="label"/></rng:optional>
             <rng:optional><rng:attribute name="module"/></rng:optional>
